@@ -1,0 +1,142 @@
+[
+  {
+    "nom": "Vandoeuvre CHU Brabois",
+    "latitude": "48.649376",
+    "longitude": "6.146287"
+  },
+  {
+    "nom": "Forêt de Haye",
+    "latitude": "48.650701",
+    "longitude": "6.148476"
+  },
+  {
+    "nom": "Faisandrie",
+    "latitude": "48.653933",
+    "longitude": "6.152328"
+  },
+  {
+    "nom": "Doyen Roubault",
+    "latitude": "48.657626",
+    "longitude": "6.155697"
+  },
+  {
+    "nom": "St André",
+    "latitude": "48.660213",
+    "longitude": "6.159484"
+  },
+  {
+    "nom": "Le Reclus",
+    "latitude": "48.662523",
+    "longitude": "6.162037"
+  },
+  {
+    "nom": "Callot",
+    "latitude": "48.666144",
+    "longitude": "6.16605"
+  },
+  {
+    "nom": "Vélodrome",
+    "latitude": "48.666952",
+    "longitude": "6.166962"
+  },
+  {
+    "nom": "Montet Octroi",
+    "latitude": "48.668425",
+    "longitude": "6.168625"
+  },
+  {
+    "nom": "Blandan",
+    "latitude": "48.672011",
+    "longitude": "6.172562"
+  },
+  {
+    "nom": "Exelmans",
+    "latitude": "48.675077",
+    "longitude": "6.175936"
+  },
+  {
+    "nom": "Jean Jaurès",
+    "latitude": "48.678776",
+    "longitude": "6.179976"
+  },
+  {
+    "nom": "Garenne",
+    "latitude": "48.681198",
+    "longitude": "6.178533"
+  },
+  {
+    "nom": "Mon Desert",
+    "latitude": "48.684337",
+    "longitude": "6.176532"
+  },
+  {
+    "nom": "Kennedy",
+    "latitude": "48.686511",
+    "longitude": "6.174783"
+  },
+  {
+    "nom": "Nancy Gare",
+    "latitude": "48.68909",
+    "longitude": "6.175899"
+  },
+  {
+    "nom": "Maginot",
+    "latitude": "48.689175",
+    "longitude": "6.177648"
+  },
+  {
+    "nom": "Point Central",
+    "latitude": "48.690789",
+    "longitude": "6.182465"
+  },
+  {
+    "nom": "Cathédrale",
+    "latitude": "48.691845",
+    "longitude": "6.185727"
+  },
+  {
+    "nom": "Division de fer",
+    "latitude": "48.693077",
+    "longitude": "6.190426"
+  },
+  {
+    "nom": "Saint Georges",
+    "latitude": "48.695605",
+    "longitude": "6.195264"
+  },
+  {
+    "nom": "Cristalleries",
+    "latitude": "48.697609",
+    "longitude": "6.198891"
+  },
+  {
+    "nom": "Gérard Barrois",
+    "latitude": "48.699649",
+    "longitude": "6.204588"
+  },
+  {
+    "nom": "Saint Livier",
+    "latitude": "48.700838",
+    "longitude": "6.208922"
+  },
+  {
+    "nom": "Carnot",
+    "latitude": "48.701943",
+    "longitude": "6.21257"
+  },
+  {
+    "nom": "Briand",
+    "latitude": "48.702984",
+    "longitude": "6.21654"
+  },
+  {
+    "nom": "Essey Rooselvelt",
+    "latitude": "48.704067",
+    "longitude": "6.221325"
+  },
+  {
+    "nom": "Essey Mouzimpré",
+    "latitude": "48.701447",
+    "longitude": "6.225091"
+  }
+]

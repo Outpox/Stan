@@ -367,14 +367,21 @@ html, body {
 }
 
 /* line 66, ../scss/index.scss */
+a {
+  outline: none;
+  border: none;
+  color: #ffffff;
+}
+
+/* line 72, ../scss/index.scss */
 .bloc-container {
   width: 100%;
 }
-/* line 69, ../scss/index.scss */
+/* line 75, ../scss/index.scss */
 .bloc-container .bloc {
   padding: 16px 16px;
 }
-/* line 72, ../scss/index.scss */
+/* line 78, ../scss/index.scss */
 .bloc-container .bloc .ss-bloc {
   margin: auto;
   max-width: 800px;
@@ -382,53 +389,59 @@ html, body {
   padding: 16px 16px;
   color: #ffffff;
 }
-/* line 79, ../scss/index.scss */
+/* line 85, ../scss/index.scss */
 .bloc-container .bloc .ss-bloc > span + span.txtmiddle {
   padding-left: 16px;
   line-height: 20px;
 }
-/* line 86, ../scss/index.scss */
+/* line 92, ../scss/index.scss */
 .bloc-container .bloc.bloc-header img {
   max-width: 100%;
   max-height: 93px;
 }
-/* line 92, ../scss/index.scss */
+/* line 98, ../scss/index.scss */
 .bloc-container .bloc.bloc-position {
   background-color: black;
 }
-/* line 96, ../scss/index.scss */
+/* line 102, ../scss/index.scss */
 .bloc-container .bloc.bloc-tram {
   background-color: #ffb100;
 }
-/* line 100, ../scss/index.scss */
+/* line 106, ../scss/index.scss */
 .bloc-container .bloc.bloc-refresh {
   background-color: #44df39;
 }
-/* line 103, ../scss/index.scss */
+/* line 109, ../scss/index.scss */
 .bloc-container .bloc.bloc-refresh .ss-bloc {
   cursor: pointer;
 }
-/* line 106, ../scss/index.scss */
+/* line 112, ../scss/index.scss */
 .bloc-container .bloc.bloc-refresh .ss-bloc:hover {
   background-color: #ffffff;
   outline: 1px solid #ffffff;
   border-color: #44df39;
   color: #44df39;
 }
-/* line 115, ../scss/index.scss */
+/* line 121, ../scss/index.scss */
 .bloc-container .bloc.bloc-essey {
   background-color: #fe2015;
 }
-/* line 119, ../scss/index.scss */
+/* line 125, ../scss/index.scss */
 .bloc-container .bloc.bloc-chu {
   background-color: #1e38c7;
 }
-/* line 123, ../scss/index.scss */
+/* line 129, ../scss/index.scss */
 .bloc-container .bloc .passages {
   padding-top: 16px;
   line-height: 20px;
 }
-/* line 127, ../scss/index.scss */
+/* line 133, ../scss/index.scss */
 .bloc-container .bloc .passages .loading {
   display: none;
+}
+/* line 138, ../scss/index.scss */
+.bloc-container .bloc.bloc-footer {
+  color: #ffffff;
+  padding: 90px 16px;
+  font-size: 14px;
 }

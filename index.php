@@ -5,7 +5,7 @@
     <link type="image/png" href="image/favicon.png" rel="icon" /> 
     <script src="js/index.js?v=1"></script>
     <link rel="stylesheet" href="css/index.css"/>
-    <title>Horaires Stan</title>
+    <title>Chrono'Stan - Horaires Stan</title>
 
     <!--- Viewport tweaks -->
     <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
@@ -171,6 +171,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="bloc bloc-footer txtcenter">
+            Made with ♥ by <a href="https://github.com/Outpox" target="_blank" new-window="1">@outpox</a> & <a href="https://cbrplx.com/" target="_blank" new-window="1">@cbrplx</a>
         </div>
     </div>
 <script>

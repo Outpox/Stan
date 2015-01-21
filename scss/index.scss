@@ -63,6 +63,12 @@ html, body {
 	display: table-cell;
 }
 
+a{
+	outline: none;
+	border: none;
+	color: #ffffff;
+}
+
 .bloc-container{
 	width: 100%;
 
@@ -127,6 +133,12 @@ html, body {
 			.loading{
 				display: none;
 			}
+		}
+
+		&.bloc-footer{
+			color: #ffffff;
+			padding: 90px 16px;
+			font-size: 14px;
 		}
 	}
 }

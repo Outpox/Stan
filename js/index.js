@@ -147,8 +147,11 @@ function goVert(){
 }
 
 function refreshPage(){
-    geoFindMe();
     for (var i = document.getElementsByClassName("horaires").length - 1; i >= 0; i--) {
         document.getElementsByClassName("horaires")[i].innerHTML = "";
     }
+    for (var i = document.getElementsByClassName("loading").length - 1; i >= 0; i--) {
+        document.getElementsByClassName("loading")[i].style.display = "block";
+    }
+    geoFindMe();
 }

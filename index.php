@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
+<head lang="fr">
     <meta charset="UTF-8">
     <link type="image/png" href="image/favicon.png" rel="icon" /> 
-    <script src="js/index.js?v=1"></script>
+    <script src="js/index.js?v=2"></script>
     <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/addtohomescreen.css"/>
     <title>Chrono'Stan - Horaires Stan</title>
 
     <!--- Viewport tweaks -->
@@ -61,18 +62,18 @@
           rel="apple-touch-startup-image">
 
     <!-- Facebook -->
-    <meta property="og:title" content="Chrono'Stan">
+    <meta property="og:title" content="ChronoStan">
     <meta property="og:type" content="website">
     <meta property="og:description" content="Les horaires de l'arrêt de tram le plus proche de vous à portée de main !">
-    <meta property="og:image" content="http://robin-pierrot.fr/stan/image/share.png">
-    <meta property="og:url" content="http://robin-pierrot.fr/">
+    <meta property="og:image" content="http://chronostan.fr/image/share2.png">
+    <meta property="og:url" content="http://chronostan.fr/">
     <meta property="og:site_name" content="Chrono'Stan">
     <meta property="fb:admins" content="1614882856">
 
     <!-- Google+ -->
-    <meta itemprop="name" content="Chrono'Stan">
+    <meta itemprop="name" content="ChronoStan">
     <meta itemprop="description" content="Les horaires de l'arrêt de tram le plus proche de vous à portée de main !">
-    <meta itemprop="image" content="http://robin-pierrot.fr/stan/image/share.png">
+    <meta itemprop="image" content="http://chronostan.fr/image/share2.png">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
@@ -80,7 +81,7 @@
     <meta name="twitter:title" content="Chrono'Stan">
     <meta name="twitter:description" content="Les horaires de l'arrêt de tram le plus proche de vous à portée de main !">
     <meta name="twitter:creator" content="@CBRPLX">
-    <meta name="twitter:image:src" content="http://robin-pierrot.fr/stan/image/share.png">
+    <meta name="twitter:image:src" content="http://chronostan.fr/image/share2.png">
 
     <script type="text/javascript">
     //Nécessaire pour quand on ajoute le site sur l'écran d'accueil de son portable
@@ -114,6 +115,10 @@
             }, false);
         }
     });
+    </script>
+    <script src="js/addtohomescreen.js?v=3"></script>
+    <script>
+      addToHomescreen();
     </script>
 </head>
 <body>

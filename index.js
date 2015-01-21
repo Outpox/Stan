@@ -26,11 +26,14 @@ function geoFindMe() {
             callAjax("./parseHours.php?&arret=" + arret.nom, true, function (data) {
 
                 var passages = JSON.parse(data);
-                var pas = document.querySelector("#passages");
-                for (var dir in passages) {
-                    for (var h in passages[dir]) {
-                        pas.innerHTML += passages[dir][h] + "</br>";
-                    }
+                var pasE = document.querySelector("#passagesE");
+                var pasV = document.querySelector("#passagesV");
+                for (var h in passages.Essey) {
+                    pasE.innerHTML += passages.Essey[h] + "</br>";
+                }
+                document.querySelector("#hr").style.display = "block";
+                for (var h in passages.Essey) {
+                    pasV.innerHTML += passages.Essey[h] + "</br>";
                 }
                 document.getElementById("loading").style.display = "none";
             });

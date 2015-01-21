@@ -21,6 +21,7 @@ function geoFindMe() {
             document.querySelector("#addr").innerHTML = adr.results[0].formatted_address;
             var arret = getClosest(latitude, longitude);
             document.querySelector("#arret").innerHTML = arret.nom;
+            document.querySelector("#maps").href = "https://google.com/maps/dir/"+latitude +","+longitude+"/" + arret.latitude + "," + arret.longitude+"/@"+latitude+","+longitude+"/data=4m2!4m1!3e2";
             document.querySelector("#dist").innerHTML = " à " + arret.dist.toFixed(2) + " km";
 
             callAjax("./parseHours.php?&arret=" + arret.nom, true, function (data) {

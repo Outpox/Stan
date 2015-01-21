@@ -16,6 +16,14 @@ $gris : #a1a1a1;
 	@include box-sizing("border-box");
 }
 
+*::selection{
+	background: transparent;
+}
+
+*::-moz-selection{
+	background: transparent;
+}
+
 html, body {
     height: 100%;
     min-height: 100%;

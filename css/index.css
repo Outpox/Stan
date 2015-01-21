@@ -220,6 +220,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 19, ../scss/index.scss */
+*::selection {
+  background: transparent;
+}
+
+/* line 23, ../scss/index.scss */
+*::-moz-selection {
+  background: transparent;
+}
+
+/* line 27, ../scss/index.scss */
 html, body {
   height: 100%;
   min-height: 100%;
@@ -229,7 +239,7 @@ html, body {
   background-color: black;
 }
 
-/* line 28, ../scss/index.scss */
+/* line 36, ../scss/index.scss */
 .hr {
   border-bottom: 1px solid #ffffff;
   height: 1px;
@@ -237,35 +247,35 @@ html, body {
   padding-top: 16px;
 }
 
-/* line 35, ../scss/index.scss */
+/* line 43, ../scss/index.scss */
 .txtmiddle {
   vertical-align: middle;
 }
 
-/* line 39, ../scss/index.scss */
+/* line 47, ../scss/index.scss */
 .txtcenter {
   text-align: center;
 }
 
-/* line 43, ../scss/index.scss */
+/* line 51, ../scss/index.scss */
 .uppercase {
   text-transform: uppercase;
 }
 
-/* line 47, ../scss/index.scss */
+/* line 55, ../scss/index.scss */
 .col {
   display: table-cell;
 }
 
-/* line 51, ../scss/index.scss */
+/* line 59, ../scss/index.scss */
 .bloc-container {
   width: 100%;
 }
-/* line 54, ../scss/index.scss */
+/* line 62, ../scss/index.scss */
 .bloc-container .bloc {
   padding: 16px 16px;
 }
-/* line 57, ../scss/index.scss */
+/* line 65, ../scss/index.scss */
 .bloc-container .bloc .ss-bloc {
   margin: auto;
   max-width: 800px;
@@ -273,38 +283,38 @@ html, body {
   padding: 16px 16px;
   color: #ffffff;
 }
-/* line 64, ../scss/index.scss */
+/* line 72, ../scss/index.scss */
 .bloc-container .bloc .ss-bloc > span + span.txtmiddle {
   padding-left: 16px;
   line-height: 20px;
 }
-/* line 71, ../scss/index.scss */
+/* line 79, ../scss/index.scss */
 .bloc-container .bloc.bloc-header img {
   max-width: 100%;
   max-height: 93px;
 }
-/* line 77, ../scss/index.scss */
+/* line 85, ../scss/index.scss */
 .bloc-container .bloc.bloc-position {
   background-color: black;
 }
-/* line 81, ../scss/index.scss */
+/* line 89, ../scss/index.scss */
 .bloc-container .bloc.bloc-tram {
   background-color: #ffb100;
 }
-/* line 85, ../scss/index.scss */
+/* line 93, ../scss/index.scss */
 .bloc-container .bloc.bloc-essey {
   background-color: #fe2015;
 }
-/* line 89, ../scss/index.scss */
+/* line 97, ../scss/index.scss */
 .bloc-container .bloc.bloc-chu {
   background-color: #1e38c7;
 }
-/* line 93, ../scss/index.scss */
+/* line 101, ../scss/index.scss */
 .bloc-container .bloc .passages {
   padding-top: 16px;
   line-height: 20px;
 }
-/* line 97, ../scss/index.scss */
+/* line 105, ../scss/index.scss */
 .bloc-container .bloc .passages .loading {
   display: none;
 }

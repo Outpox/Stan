@@ -29,13 +29,20 @@ function geoFindMe() {
                 var pasE = document.querySelector("#passagesE");
                 var pasV = document.querySelector("#passagesV");
                 for (var h in passages.Essey) {
-                    pasE.innerHTML += passages.Essey[h] + "</br>";
+                    var coupe = passages.Essey[h].indexOf("direction");
+                    if(coupe != -1)
+                        pasE.innerHTML += "- "+passages.Essey[h].substr(0,coupe-2) + "</br>";
                 }
-                document.querySelector("#hr").style.display = "block";
+
                 for (var h in passages.Vandoeuvre) {
-                    pasV.innerHTML += passages.Vandoeuvre[h] + "</br>";
+                    var coupe = passages.Essey[h].indexOf("direction");
+                    if(coupe != -1)
+                        pasV.innerHTML += "- "+passages.Vandoeuvre[h].substr(0,coupe-2) + "</br>";
                 }
-                document.getElementById("loading").style.display = "none";
+
+                for (var i = document.getElementsByClassName("loading").length - 1; i >= 0; i--) {
+                    document.getElementsByClassName("loading")[i].style.display = "none";
+                }
             });
         });
     }
@@ -113,8 +120,11 @@ function distance(lat1, lon1, lat2, lon2, unit) {
  */
 function callAjax(url, loading, callback) {
     var xmlhttp;
-    if (loading)
-        document.getElementById("loading").style.display = "block";
+    if (loading){
+        for (var i = document.getElementsByClassName("loading").length - 1; i >= 0; i--) {
+            document.getElementsByClassName("loading")[i].style.display = "block";
+        }
+    }
     // compatible with IE7+, Firefox, Chrome, Opera, Safari
     xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
@@ -127,3 +137,21 @@ function callAjax(url, loading, callback) {
 }
 
 geoFindMe();
+
+function goBlanc(){
+    document.getElementsByClassName("icone-chrono")[0].setAttribute("class", "icone-chrono-vert txtmiddle");
+}
+
+function goVert(){
+    document.getElementsByClassName("icone-chrono-vert")[0].setAttribute("class", "icone-chrono txtmiddle");
+}
+
+function refreshPage(){
+    for (var i = document.getElementsByClassName("horaires").length - 1; i >= 0; i--) {
+        document.getElementsByClassName("horaires")[i].innerHTML = "";
+    }
+    for (var i = document.getElementsByClassName("loading").length - 1; i >= 0; i--) {
+        document.getElementsByClassName("loading")[i].style.display = "block";
+    }
+    geoFindMe();
+}

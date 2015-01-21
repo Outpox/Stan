@@ -32,8 +32,8 @@ function geoFindMe() {
                     pasE.innerHTML += passages.Essey[h] + "</br>";
                 }
                 document.querySelector("#hr").style.display = "block";
-                for (var h in passages.Essey) {
-                    pasV.innerHTML += passages.Essey[h] + "</br>";
+                for (var h in passages.Vandoeuvre) {
+                    pasV.innerHTML += passages.Vandoeuvre[h] + "</br>";
                 }
                 document.getElementById("loading").style.display = "none";
             });

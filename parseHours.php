@@ -16,7 +16,10 @@ $tabE = array();
 foreach ($html->find('div.hour ul li') as $h) {
     array_push($tabE, $h->plaintext);
 }
-//echo json_encode($tab);
+$error = $html->find(".error");
+if (count($error) > 0) {
+    array_push($tabE, $error[0]->plaintext);
+}
 
 $direction = "81$2$1013";
 
@@ -26,7 +29,11 @@ $tabV = array();
 foreach ($html->find('div.hour ul li') as $h) {
     array_push($tabV, $h->plaintext);
 }
+$error = $html->find(".error");
+if (count($error) > 0) {
+    array_push($tabV, $error[0]->plaintext);
+}
 
-$tab = array();
-array_push($tab, $tabE, $tabV);
+$tab = array('Essey' => $tabE, 'Vandoeuvre' => $tabV);
+//array_push($tab, $tabE, $tabV);
 echo json_encode($tab);

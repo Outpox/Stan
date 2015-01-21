@@ -3,7 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <link type="image/png" href="image/favicon.png" rel="icon" /> 
-    <script src="js/index.js"></script>
+    <script src="js/index.js?v=1"></script>
     <link rel="stylesheet" href="css/index.css"/>
     <title>Horaires Stan</title>
 
@@ -151,7 +151,7 @@
                 <div class="hr"></div>
                 <div class="passages uppercase">
                     <div class="loading txtcenter">
-                        <span class="icone-loading rotating"></span>
+                        <span class="icone-loading-droite rotating-droite"></span>
                     </div>
                     <div class="horaires" id="passagesE">
                     </div>

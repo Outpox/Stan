@@ -8,6 +8,7 @@ $noir: #000000;
 $bleu: #1e38c7;
 $rouge : #fe2015;
 $gris : #a1a1a1;
+$vert: #44DF39;
 
 
 @include global-reset();
@@ -22,6 +23,12 @@ $gris : #a1a1a1;
 
 *::-moz-selection{
 	background: transparent;
+}
+
+.transition{
+  @include transition-property(all);
+  @include transition-duration(0.1s);
+  @include transition-timing-function(ease);
 }
 
 html, body {
@@ -88,6 +95,21 @@ html, body {
 
 		&.bloc-tram{
 			background-color: $jaune;
+		}
+
+		&.bloc-refresh{
+			background-color: $vert;
+
+			.ss-bloc{
+				cursor: pointer;
+
+				&:hover{
+					background-color: #ffffff;
+					outline: 1px solid #ffffff;
+					border-color: $vert;
+					color: $vert;
+				}
+			}
 		}
 
 		&.bloc-essey{

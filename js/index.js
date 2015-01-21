@@ -31,13 +31,13 @@ function geoFindMe() {
                 for (var h in passages.Essey) {
                     var coupe = passages.Essey[h].indexOf("direction");
                     if(coupe != -1)
-                        pasE.innerHTML += "- "+passages.Essey[h].substr(0,coupe-1) + "</br>";
+                        pasE.innerHTML += "- "+passages.Essey[h].substr(0,coupe-2) + "</br>";
                 }
 
                 for (var h in passages.Vandoeuvre) {
                     var coupe = passages.Essey[h].indexOf("direction");
                     if(coupe != -1)
-                        pasV.innerHTML += "- "+passages.Vandoeuvre[h].substr(0,coupe-1) + "</br>";
+                        pasV.innerHTML += "- "+passages.Vandoeuvre[h].substr(0,coupe-2) + "</br>";
                 }
 
                 for (var i = document.getElementsByClassName("loading").length - 1; i >= 0; i--) {
@@ -137,3 +137,18 @@ function callAjax(url, loading, callback) {
 }
 
 geoFindMe();
+
+function goBlanc(){
+    document.getElementsByClassName("icone-chrono")[0].setAttribute("class", "icone-chrono-vert txtmiddle");
+}
+
+function goVert(){
+    document.getElementsByClassName("icone-chrono-vert")[0].setAttribute("class", "icone-chrono txtmiddle");
+}
+
+function refreshPage(){
+    geoFindMe();
+    for (var i = document.getElementsByClassName("horaires").length - 1; i >= 0; i--) {
+        document.getElementsByClassName("horaires")[i].innerHTML = "";
+    }
+}

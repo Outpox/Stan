@@ -136,14 +136,24 @@
                 </span>
             </div>
         </div>
+        <div class="bloc bloc-refresh">
+            <div class="ss-bloc proxima-bold uppercase transition" onmouseover="goBlanc()" onmouseleave="goVert()" onclick="refreshPage()">
+                <span class="col txtmiddle"><span class="icone-chrono txtmiddle"></span></span>
+                <span class="txtmiddle uppercase col">
+                    Refresh
+                </span>
+            </div>
+        </div>
         <div class="bloc bloc-essey">
             <div class="ss-bloc proxima-bold">
                 <span class="col txtmiddle"><span class="icone-droite txtmiddle"></span></span>
                 <span class="txtmiddle uppercase col">DIR. ESSEY-MOUZIMPRE</span>
                 <div class="hr"></div>
-                <div class="passages uppercase" id="passagesE">
+                <div class="passages uppercase">
                     <div class="loading txtcenter">
                         <span class="icone-loading rotating"></span>
+                    </div>
+                    <div class="horaires" id="passagesE">
                     </div>
                 </div>
             </div>
@@ -153,9 +163,11 @@
                 <span class="col txtmiddle"><span class="icone-gauche txtmiddle"></span></span>
                 <span class="txtmiddle uppercase col">DIR. CHU-BRABOIS</span>
                 <div class="hr"></div>
-                <div class="passages uppercase" id="passagesV">
+                <div class="passages uppercase">
                     <div class="loading txtcenter">
                         <span class="icone-loading rotating"></span>
+                    </div>
+                    <div class="horaires" id="passagesV">
                     </div>
                 </div>
             </div>

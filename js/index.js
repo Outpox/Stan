@@ -44,15 +44,11 @@ function geoFindMe() {
                 var pasE = document.querySelector("#passagesE");
                 var pasV = document.querySelector("#passagesV");
                 for (var h in passages.Essey) {
-                    // var coupe = passages.Essey[h].indexOf("direction");
-                    if(coupe != -1)
-                        pasE.innerHTML += "- "+passages.Essey[h] + "</br>";
+                    pasE.innerHTML += "- "+passages.Essey[h] + "</br>";
                 }
 
                 for (var h in passages.Vandoeuvre) {
-                    var coupe = passages.Essey[h].indexOf("direction");
-                    if(coupe != -1)
-                        pasV.innerHTML += "- "+passages.Vandoeuvre[h] + "</br>";
+                    pasV.innerHTML += "- "+passages.Vandoeuvre[h] + "</br>";
                 }
 
                 for (var i = document.getElementsByClassName("loading").length - 1; i >= 0; i--) {

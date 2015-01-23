@@ -14,24 +14,34 @@ $url = "http://www.reseau-stan.com/monitoring/index.asp?rub_code=67&pointDep=283
 $html = file_get_html($url);
 $tabE = array();
 foreach ($html->find('div.hour ul li') as $h) {
-    array_push($tabE, $h->plaintext);
+    $txt = $h->plaintext;
+	$txt = preg_replace("/direction/i", "", $txt);
+	$txt = preg_replace("/essey/i", "", $txt);
+	$txt = preg_replace("/mouzimpre/i", "", $txt);
+    array_push($tabE, $txt);
 }
 $error = $html->find(".error");
 if (count($error) > 0) {
-    array_push($tabE, $error[0]->plaintext);
+	if(!empty($error[0]->plaintext))
+    	array_push($tabE, $error[0]->plaintext);
 }
-
 $direction = "81$2$1013";
 
 $url = "http://www.reseau-stan.com/monitoring/index.asp?rub_code=67&pointDep=283" . $arret . "$2$54395$&line=" . $direction;
 $html = file_get_html($url);
 $tabV = array();
 foreach ($html->find('div.hour ul li') as $h) {
-    array_push($tabV, $h->plaintext);
+	$txt = $h->plaintext;
+	$txt = preg_replace("/direction/i", "", $txt);
+	$txt = preg_replace("/chu/i", "", $txt);
+	$txt = preg_replace("/brabois/i", "", $txt);
+
+    array_push($tabV, $txt);
 }
 $error = $html->find(".error");
 if (count($error) > 0) {
-    array_push($tabV, $error[0]->plaintext);
+	if(!empty($error[0]->plaintext))
+    	array_push($tabV, $error[0]->plaintext);
 }
 
 $tab = array('Essey' => $tabE, 'Vandoeuvre' => $tabV);

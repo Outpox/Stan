@@ -1,17 +1,17 @@
 @charset "CP850";
 /* line 21, ../scss/_sprite.scss */
 [class^="icone-"] {
-  background: url('../image/icone-sebe259c23f.png');
+  background: url('../image/icone-seaf4f53403.png');
   display: inline-block;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min—moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 21, ../scss/_sprite.scss */
   [class^="icone-"] {
-    background: url('../image/icone-2x-s5ff7782fde.png');
-    -moz-background-size: 32px 231px;
-    -o-background-size: 32px 231px;
-    -webkit-background-size: 32px 231px;
-    background-size: 32px 231px;
+    background: url('../image/icone-2x-s43c56766f5.png');
+    -moz-background-size: 32px 285px;
+    -o-background-size: 32px 285px;
+    -webkit-background-size: 32px 285px;
+    background-size: 32px 285px;
   }
 }
 
@@ -30,43 +30,57 @@
 }
 
 /* line 33, ../scss/_sprite.scss */
-.icone-droite {
+.icone-coeur {
   background-position: 0 -54px;
   height: 22px;
   width: 15px;
 }
 
 /* line 33, ../scss/_sprite.scss */
-.icone-gauche {
+.icone-droite {
   background-position: 0 -81px;
   height: 22px;
   width: 15px;
 }
 
 /* line 33, ../scss/_sprite.scss */
-.icone-loading-droite {
+.icone-gauche {
   background-position: 0 -108px;
+  height: 22px;
+  width: 15px;
+}
+
+/* line 33, ../scss/_sprite.scss */
+.icone-loading-droite {
+  background-position: 0 -135px;
   height: 32px;
   width: 32px;
 }
 
 /* line 33, ../scss/_sprite.scss */
 .icone-loading {
-  background-position: 0 -145px;
+  background-position: 0 -172px;
   height: 32px;
   width: 32px;
 }
 
 /* line 33, ../scss/_sprite.scss */
+.icone-plane {
+  background-position: 0 -209px;
+  height: 22px;
+  width: 15px;
+}
+
+/* line 33, ../scss/_sprite.scss */
 .icone-position {
-  background-position: 0 -182px;
+  background-position: 0 -236px;
   height: 22px;
   width: 15px;
 }
 
 /* line 33, ../scss/_sprite.scss */
 .icone-tram {
-  background-position: 0 -209px;
+  background-position: 0 -263px;
   height: 22px;
   width: 15px;
 }
@@ -83,38 +97,48 @@
   }
 
   /* line 41, ../scss/_sprite.scss */
-  .icone-droite {
+  .icone-coeur {
     background-position: 0 -54px;
   }
 
   /* line 41, ../scss/_sprite.scss */
-  .icone-gauche {
+  .icone-droite {
     background-position: 0 -81px;
   }
 
   /* line 41, ../scss/_sprite.scss */
-  .icone-loading-droite {
+  .icone-gauche {
     background-position: 0 -108px;
   }
 
   /* line 41, ../scss/_sprite.scss */
+  .icone-loading-droite {
+    background-position: 0 -135px;
+  }
+
+  /* line 41, ../scss/_sprite.scss */
   .icone-loading {
-    background-position: 0 -145px;
+    background-position: 0 -172px;
+  }
+
+  /* line 41, ../scss/_sprite.scss */
+  .icone-plane {
+    background-position: 0 -209px;
   }
 
   /* line 41, ../scss/_sprite.scss */
   .icone-position {
-    background-position: 0 -182px;
+    background-position: 0 -236px;
   }
 
   /* line 41, ../scss/_sprite.scss */
   .icone-tram {
-    background-position: 0 -209px;
+    background-position: 0 -263px;
   }
 }
 @font-face {
   font-family: "proxima";
-  src: url('../fonts/ProximaNovaRegular.ttf?1421830334') format('truetype'), url('../fonts/ProximaNovaRegular.eot?1421830334') format('embedded-opentype'), url('../fonts/ProximaNovaRegular.woff?1421830334') format('woff'), url('../fonts/ProximaNovaRegular.svg?1421830334') format('svg');
+  src: url('../fonts/ProximaNovaRegular.ttf?1421858235') format('truetype'), url('../fonts/ProximaNovaRegular.eot?1421858235') format('embedded-opentype'), url('../fonts/ProximaNovaRegular.woff?1421858235') format('woff'), url('../fonts/ProximaNovaRegular.svg?1421858235') format('svg');
 }
 /* line 6, ../scss/_fonts.scss */
 .proxima {
@@ -126,7 +150,7 @@
 
 @font-face {
   font-family: "proxima-bold";
-  src: url('../fonts/ProximaNovaBold.ttf?1421830470') format('truetype'), url('../fonts/ProximaNovaBold.eot?1421830470') format('embedded-opentype'), url('../fonts/ProximaNovaBold.woff?1421830470') format('woff'), url('../fonts/ProximaNovaBold.svg?1421830470') format('svg');
+  src: url('../fonts/ProximaNovaBold.ttf?1421858235') format('truetype'), url('../fonts/ProximaNovaBold.eot?1421858235') format('embedded-opentype'), url('../fonts/ProximaNovaBold.woff?1421858235') format('woff'), url('../fonts/ProximaNovaBold.svg?1421858235') format('svg');
 }
 /* line 18, ../scss/_fonts.scss */
 .proxima-bold {
@@ -344,44 +368,45 @@ html, body {
   height: 1px;
   max-height: 1px;
   padding-top: 16px;
+  margin-bottom: 16px;
 }
 
-/* line 50, ../scss/index.scss */
+/* line 51, ../scss/index.scss */
 .txtmiddle {
   vertical-align: middle;
 }
 
-/* line 54, ../scss/index.scss */
+/* line 55, ../scss/index.scss */
 .txtcenter {
   text-align: center;
 }
 
-/* line 58, ../scss/index.scss */
+/* line 59, ../scss/index.scss */
 .uppercase {
   text-transform: uppercase;
 }
 
-/* line 62, ../scss/index.scss */
+/* line 63, ../scss/index.scss */
 .col {
   display: table-cell;
 }
 
-/* line 66, ../scss/index.scss */
+/* line 67, ../scss/index.scss */
 a {
   outline: none;
   border: none;
   color: #ffffff;
 }
 
-/* line 72, ../scss/index.scss */
+/* line 73, ../scss/index.scss */
 .bloc-container {
   width: 100%;
 }
-/* line 75, ../scss/index.scss */
+/* line 76, ../scss/index.scss */
 .bloc-container .bloc {
   padding: 16px 16px;
 }
-/* line 78, ../scss/index.scss */
+/* line 79, ../scss/index.scss */
 .bloc-container .bloc .ss-bloc {
   margin: auto;
   max-width: 800px;
@@ -389,50 +414,49 @@ a {
   padding: 16px 16px;
   color: #ffffff;
 }
-/* line 85, ../scss/index.scss */
-.bloc-container .bloc .ss-bloc > span + span.txtmiddle {
+/* line 86, ../scss/index.scss */
+.bloc-container .bloc .ss-bloc > span + span.txtmiddle, .bloc-container .bloc .ss-bloc .ss-bloc-like > span + span.txtmiddle {
   padding-left: 16px;
   line-height: 20px;
 }
-/* line 92, ../scss/index.scss */
+/* line 93, ../scss/index.scss */
 .bloc-container .bloc.bloc-header img {
   max-width: 100%;
   max-height: 93px;
 }
-/* line 98, ../scss/index.scss */
+/* line 99, ../scss/index.scss */
 .bloc-container .bloc.bloc-position {
   background-color: black;
 }
-/* line 102, ../scss/index.scss */
+/* line 103, ../scss/index.scss */
 .bloc-container .bloc.bloc-tram {
   background-color: #ffb100;
 }
-/* line 106, ../scss/index.scss */
+/* line 107, ../scss/index.scss */
 .bloc-container .bloc.bloc-refresh {
   background-color: #44df39;
 }
-/* line 109, ../scss/index.scss */
+/* line 110, ../scss/index.scss */
 .bloc-container .bloc.bloc-refresh .ss-bloc {
   cursor: pointer;
 }
-/* line 112, ../scss/index.scss */
+/* line 113, ../scss/index.scss */
 .bloc-container .bloc.bloc-refresh .ss-bloc:hover {
   background-color: #ffffff;
   outline: 1px solid #ffffff;
   border-color: #44df39;
   color: #44df39;
 }
-/* line 121, ../scss/index.scss */
+/* line 122, ../scss/index.scss */
 .bloc-container .bloc.bloc-essey {
   background-color: #fe2015;
 }
-/* line 125, ../scss/index.scss */
+/* line 126, ../scss/index.scss */
 .bloc-container .bloc.bloc-chu {
   background-color: #1e38c7;
 }
-/* line 129, ../scss/index.scss */
+/* line 130, ../scss/index.scss */
 .bloc-container .bloc .passages {
-  padding-top: 16px;
   line-height: 20px;
 }
 /* line 133, ../scss/index.scss */
@@ -444,4 +468,8 @@ a {
   color: #ffffff;
   padding: 90px 16px;
   font-size: 14px;
+}
+/* line 143, ../scss/index.scss */
+.bloc-container .bloc.bloc-footer .icone-coeur {
+  margin: 0 2px;
 }

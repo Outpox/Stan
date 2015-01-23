@@ -22,33 +22,37 @@ function geoFindMe() {
             var arret = getClosest(latitude, longitude);
             document.querySelector("#arret").innerHTML = arret.nom;
 
-            //Adress Google only, doesn't open any app on any device
-            // document.querySelector("#maps").href = "https://google.com/maps/dir/"+latitude +","+longitude+"/" + arret.latitude + "," + arret.longitude+"/@"+latitude+","+longitude+"/data=4m2!4m1!3e2";
+            var os = getMobileOperatingSystem();
 
-            //Adress for all (Apple redirect the link on google if it's not IOS)
-            document.querySelector("#maps").href = "http://maps.apple.com/?saddr=48.6877703,6.1801504&daddr=48.689175,6.177648&directionsmode=walking";
+            var lien_map_ios = "http://maps.apple.com/?saddr="+latitude+","+longitude+"&daddr="+arret.latitude+","+arret.longitude+"&directionsmode=walking&dirflg=w";
+            var lien_map_android = "geo:"+latitude+","+longitude+"?saddr=("+latitude+","+longitude+")&daddr=("+arret.latitude+","+arret.longitude+")&dirflg=w&directionsmode=walking";
+            var lien_map_default = "http://maps.google.com/maps?saddr="+latitude+","+longitude+"&daddr="+arret.latitude+","+arret.longitude+"&directionsmode=walking&dirflg=w";
 
-            //Adress for IOS only
-            // document.querySelector("#maps").href = "maps://?saddr="+latitude +","+longitude+"&daddr=" + arret.latitude + "," + arret.longitude+"&directionsmode=walking";
+            var lien_map = lien_map_default;
+            if(os == "iOS"){
+                lien_map = lien_map_ios;
+            }else if(os == "Android"){
+                lien_map = lien_map_android;
+            }
             
+            document.querySelector("#maps").href = lien_map;
 
             document.querySelector("#dist").innerHTML = " à " + arret.dist.toFixed(2) + " km";
 
             callAjax("./parseHours.php?&arret=" + arret.nom, true, function (data) {
-
                 var passages = JSON.parse(data);
                 var pasE = document.querySelector("#passagesE");
                 var pasV = document.querySelector("#passagesV");
                 for (var h in passages.Essey) {
-                    var coupe = passages.Essey[h].indexOf("direction");
+                    // var coupe = passages.Essey[h].indexOf("direction");
                     if(coupe != -1)
-                        pasE.innerHTML += "- "+passages.Essey[h].substr(0,coupe-2) + "</br>";
+                        pasE.innerHTML += "- "+passages.Essey[h] + "</br>";
                 }
 
                 for (var h in passages.Vandoeuvre) {
                     var coupe = passages.Essey[h].indexOf("direction");
                     if(coupe != -1)
-                        pasV.innerHTML += "- "+passages.Vandoeuvre[h].substr(0,coupe-2) + "</br>";
+                        pasV.innerHTML += "- "+passages.Vandoeuvre[h] + "</br>";
                 }
 
                 for (var i = document.getElementsByClassName("loading").length - 1; i >= 0; i--) {
@@ -165,4 +169,18 @@ function refreshPage(){
         document.getElementsByClassName("loading")[i].style.display = "block";
     }
     geoFindMe();
+}
+
+function getMobileOperatingSystem() {
+  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+  if( userAgent.match( /iPad/i ) || userAgent.match( /iPhone/i ) || userAgent.match( /iPod/i ) ){
+    return 'iOS';
+
+  }else if( userAgent.match( /Android/i ) ){
+
+    return 'Android';
+  }else{
+    return 'unknown';
+  }
 }

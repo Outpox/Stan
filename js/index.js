@@ -21,7 +21,17 @@ function geoFindMe() {
             document.querySelector("#addr").innerHTML = adr.results[0].formatted_address;
             var arret = getClosest(latitude, longitude);
             document.querySelector("#arret").innerHTML = arret.nom;
-            document.querySelector("#maps").href = "https://google.com/maps/dir/"+latitude +","+longitude+"/" + arret.latitude + "," + arret.longitude+"/@"+latitude+","+longitude+"/data=4m2!4m1!3e2";
+
+            //Adress Google only, doesn't open any app on any device
+            // document.querySelector("#maps").href = "https://google.com/maps/dir/"+latitude +","+longitude+"/" + arret.latitude + "," + arret.longitude+"/@"+latitude+","+longitude+"/data=4m2!4m1!3e2";
+
+            //Adress for all (Apple redirect the link on google if it's not IOS)
+            document.querySelector("#maps").href = "http://maps.apple.com/?saddr=48.6877703,6.1801504&daddr=48.689175,6.177648&directionsmode=walking";
+
+            //Adress for IOS only
+            // document.querySelector("#maps").href = "maps://?saddr="+latitude +","+longitude+"&daddr=" + arret.latitude + "," + arret.longitude+"&directionsmode=walking";
+            
+
             document.querySelector("#dist").innerHTML = " à " + arret.dist.toFixed(2) + " km";
 
             callAjax("./parseHours.php?&arret=" + arret.nom, true, function (data) {

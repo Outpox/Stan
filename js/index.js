@@ -25,14 +25,15 @@ function geoFindMe() {
             var os = getMobileOperatingSystem();
 
             var lien_map_ios = "http://maps.apple.com/?saddr="+latitude+","+longitude+"&daddr="+arret.latitude+","+arret.longitude+"&directionsmode=walking&dirflg=w";
-            var lien_map_android = "geo:"+latitude+","+longitude+"?saddr=("+latitude+","+longitude+")&daddr=("+arret.latitude+","+arret.longitude+")&dirflg=w&directionsmode=walking";
+            var lien_map_android = "geo:"+latitude+","+longitude+"?saddr=("+latitude+","+longitude+")&daddr=("+arret.latitude+","+arret.longitude+")&directionsmode=walking";
             var lien_map_default = "http://maps.google.com/maps?saddr="+latitude+","+longitude+"&daddr="+arret.latitude+","+arret.longitude+"&directionsmode=walking&dirflg=w";
 
             var lien_map = lien_map_default;
             if(os == "iOS"){
                 lien_map = lien_map_ios;
             }else if(os == "Android"){
-                lien_map = lien_map_android;
+                // Ne fonctionne pas
+                // lien_map = lien_map_android;
             }
             
             document.querySelector("#maps").href = lien_map;

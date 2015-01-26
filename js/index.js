@@ -54,7 +54,7 @@ function geoFindMe() {
                     listErrorE.style.display = "block";
 
                     for (var e in passages.ErrorE) {
-                        listErrorE.innerHTML += "<div class='row ss-bloc-like'><span class='icone-alert txtmiddle'></span><span class='txtmiddle'>"+passages.ErrorE[e]+"</span></div>";
+                        listErrorE.innerHTML += "<div class='row ss-bloc-like'><span class='col txtmiddle'><span class='icone-alert'></span></span><span class='col txtmiddle'>"+passages.ErrorE[e]+"</span></div>";
                     }
                 }
 
@@ -68,7 +68,7 @@ function geoFindMe() {
                     listErrorV.style.display = "block";
 
                     for (var e in passages.ErrorV) {
-                        listErrorV.innerHTML += "<div class='row ss-bloc-like'><span class='icone-alert txtmiddle'></span><span class='txtmiddle'>"+passages.ErrorV[e]+"</span></div>";
+                        listErrorV.innerHTML += "<div class='row ss-bloc-like'><span class='col txtmiddle'><span class='icone-alert'></span></span><span class='col txtmiddle'>"+passages.ErrorV[e]+"</span></div>";
                     }
                 }
 

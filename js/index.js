@@ -48,8 +48,28 @@ function geoFindMe() {
                     pasE.innerHTML += "- "+passages.Essey[h] + "</br>";
                 }
 
+                //Affichage des erreurs
+                if(passages.ErrorE.length > 0){
+                    var listErrorE = document.getElementById("errorE");
+                    listErrorE.style.display = "block";
+
+                    for (var e in passages.ErrorE) {
+                        listErrorE.innerHTML += "<div class='row ss-bloc-like'><span class='icone-alert txtmiddle'></span><span class='txtmiddle'>"+passages.ErrorE[e]+"</span></div>";
+                    }
+                }
+
                 for (var h in passages.Vandoeuvre) {
                     pasV.innerHTML += "- "+passages.Vandoeuvre[h] + "</br>";
+                }
+
+                //Affichage des erreurs
+                if(passages.ErrorV.length > 0){
+                    var listErrorV = document.getElementById("errorV");
+                    listErrorV.style.display = "block";
+
+                    for (var e in passages.ErrorV) {
+                        listErrorV.innerHTML += "<div class='row ss-bloc-like'><span class='icone-alert txtmiddle'></span><span class='txtmiddle'>"+passages.ErrorV[e]+"</span></div>";
+                    }
                 }
 
                 for (var i = document.getElementsByClassName("loading").length - 1; i >= 0; i--) {

@@ -20,10 +20,15 @@ foreach ($html->find('div.hour ul li') as $h) {
 	$txt = preg_replace("/mouzimpre/i", "", $txt);
     array_push($tabE, $txt);
 }
+
+$errorE = array();
 $error = $html->find(".error");
 if (count($error) > 0) {
-	if(!empty($error[0]->plaintext))
-    	array_push($tabE, $error[0]->plaintext);
+	if(!empty($error[0]->plaintext)){
+		$txt = $error[0]->plaintext;
+		$txt = preg_replace("/:/i", "", $txt);
+    	array_push($errorE, $txt);
+    }
 }
 $direction = "81$2$1013";
 
@@ -38,12 +43,17 @@ foreach ($html->find('div.hour ul li') as $h) {
 
     array_push($tabV, $txt);
 }
+
+$errorV = array();
 $error = $html->find(".error");
 if (count($error) > 0) {
-	if(!empty($error[0]->plaintext))
-    	array_push($tabV, $error[0]->plaintext);
+	if(!empty($error[0]->plaintext)){
+		$txt = $error[0]->plaintext;
+		$txt = preg_replace("/:/i", "", $txt);
+    	array_push($errorV, $txt);
+    }
 }
 
-$tab = array('Essey' => $tabE, 'Vandoeuvre' => $tabV);
+$tab = array('Essey' => $tabE, 'Vandoeuvre' => $tabV, 'ErrorE' => $errorE, 'ErrorV' => $errorV);
 //array_push($tab, $tabE, $tabV);
 echo json_encode($tab);

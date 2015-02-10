@@ -51,7 +51,7 @@ ath.intl = {
 	},
 
 	fr_fr: {
-		message: '<span class="proxima-bold" style="font-size:12px;text-transform:uppercase;">Pour ajouter cette application web sur l\'écran d\'accueil : Appuyez %icon et sélectionnez <strong>%action</strong>.</span>',
+		message: '<span class="proxima-bold" style="font-size:12px;text-transform:uppercase;">Optimise l\'expérience en l\'ajoutant sur l\'écran d\'accueil : %icon</span>',
 		action: { ios: 'Ajouter sur l\'écran d\'accueil', android: 'Ajouter à l\'écran d\'accueil', windows: 'Épingler à l\'écran d\'accueil' }
 	},
 

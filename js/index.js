@@ -182,6 +182,10 @@ function refreshPage(){
     for (var i = document.getElementsByClassName("horaires").length - 1; i >= 0; i--) {
         document.getElementsByClassName("horaires")[i].innerHTML = "";
     }
+    for (var i = document.getElementsByClassName("ss-bloc-error").length - 1; i >= 0; i--) {
+        document.getElementsByClassName("ss-bloc-error")[i].style.display = "none";
+        document.getElementsByClassName("ss-bloc-error")[i].innerHTML = "<div class=\"hr\"></div>";
+    }
     for (var i = document.getElementsByClassName("loading").length - 1; i >= 0; i--) {
         document.getElementsByClassName("loading")[i].style.display = "block";
     }

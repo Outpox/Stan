@@ -17,6 +17,7 @@ function geoFindMe() {
 
         var url = "https://maps.googleapis.com/maps/api/geocode/json?latlng=" + latitude + "," + longitude+"&key=AIzaSyCNJqWDbXed3S7vYSi2GXYfDr5sPsVd4dE";
         callAjax(url, false, function (data) {
+            alert(data);
             var adr = JSON.parse(data);
             document.querySelector("#addr").innerHTML = adr.results[0].formatted_address;
             var arret = getClosest(latitude, longitude);

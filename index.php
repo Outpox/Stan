@@ -183,6 +183,6 @@ if(window.location.host == "chronostan.fr" || window.location.host == "www.chron
 }
 
 </script>
-<script src="js/index.js?v=12"></script>
+<script src="js/index.js?v=<?= time() ?>"></script>
 </body>
 </html>

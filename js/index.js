@@ -169,7 +169,9 @@ function callAjax(url, loading, callback) {
     xmlhttp.send();
 }
 
-geoFindMe();
+if(location.pathname == "/"){
+    geoFindMe();
+}
 
 function goBlanc(){
     document.getElementsByClassName("icone-chrono")[0].setAttribute("class", "icone-chrono-vert txtmiddle");

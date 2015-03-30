@@ -137,7 +137,7 @@
                         </div>
                         <div class="col txtmiddle creators-infos">
                             <div class="proxima-bold uppercase">Guillaume Migeon</div>
-                            <div>21 ans, Étudiant MIAGE</div>
+                            <div>21 ans, Chef de projet</div>
                         </div>
                     </div>
                     <div class="col">
@@ -175,5 +175,6 @@ if(window.location.host == "chronostan.fr" || window.location.host == "www.chron
 }
 
 </script>
+<script type="text/javascript" src="/js/index.js?v=<?= time() ?>"></script>
 </body>
 </html>

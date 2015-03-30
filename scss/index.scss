@@ -70,11 +70,25 @@ a{
 	color: #ffffff;
 }
 
+.italic{
+	font-style: italic;
+}
+
 .bloc-container{
 	width: 100%;
 
 	.bloc{
 		padding: 16px 16px;
+
+		&.bloc-about{
+			.ss-bloc{
+				margin-bottom: 30px;
+
+				&:last-of-type{
+					margin-bottom: 0;
+				}
+			}
+		}
 
 		.ss-bloc{
 			margin: auto;
@@ -86,6 +100,25 @@ a{
 			&>span+span.txtmiddle, .ss-bloc-like>span+span.txtmiddle{
 				padding-left: 16px;
 				line-height: 20px;
+			}
+
+			.creators{
+				width: 100%;
+				display: table;
+
+				&>.col{
+					@media (max-width: 630px) {
+						display: block;
+						&:first-of-type{
+							margin-bottom: 50px;
+						}
+					}
+				}
+
+				.creators-infos{
+					padding-left: 20px;
+					line-height: 24px;
+				}
 			}
 
 			.ss-bloc-error{
@@ -143,6 +176,10 @@ a{
 			color: #ffffff;
 			padding: 90px 16px;
 			font-size: 14px;
+
+			&>div{
+				margin-bottom: 30px;
+			}
 
 			.icone-coeur{
 				margin: 0 2px;

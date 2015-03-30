@@ -1,17 +1,17 @@
 @charset "CP850";
 /* line 21, ../scss/_sprite.scss */
 [class^="icone-"] {
-  background: url('../image/icone-s24c16d2deb.png');
+  background: url('../image/icone-s05a12e3332.png');
   display: inline-block;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min—moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 21, ../scss/_sprite.scss */
   [class^="icone-"] {
-    background: url('../image/icone-2x-s9e1822c436.png');
-    -moz-background-size: 32px 312px;
-    -o-background-size: 32px 312px;
-    -webkit-background-size: 32px 312px;
-    background-size: 32px 312px;
+    background: url('../image/icone-2x-s8eaf25889c.png');
+    -moz-background-size: 80px 563px;
+    -o-background-size: 80px 563px;
+    -webkit-background-size: 80px 563px;
+    background-size: 80px 563px;
   }
 }
 
@@ -58,36 +58,71 @@
 }
 
 /* line 33, ../scss/_sprite.scss */
-.icone-loading-droite {
+.icone-guillaume-migeon {
   background-position: 0 -162px;
+  height: 80px;
+  width: 80px;
+}
+
+/* line 33, ../scss/_sprite.scss */
+.icone-guy {
+  background-position: 0 -247px;
+  height: 22px;
+  width: 15px;
+}
+
+/* line 33, ../scss/_sprite.scss */
+.icone-lamp {
+  background-position: 0 -274px;
+  height: 22px;
+  width: 15px;
+}
+
+/* line 33, ../scss/_sprite.scss */
+.icone-loading-droite {
+  background-position: 0 -301px;
   height: 32px;
   width: 32px;
 }
 
 /* line 33, ../scss/_sprite.scss */
 .icone-loading {
-  background-position: 0 -199px;
+  background-position: 0 -338px;
   height: 32px;
   width: 32px;
 }
 
 /* line 33, ../scss/_sprite.scss */
 .icone-plane {
-  background-position: 0 -236px;
+  background-position: 0 -375px;
   height: 22px;
   width: 15px;
 }
 
 /* line 33, ../scss/_sprite.scss */
 .icone-position {
-  background-position: 0 -263px;
+  background-position: 0 -402px;
+  height: 22px;
+  width: 15px;
+}
+
+/* line 33, ../scss/_sprite.scss */
+.icone-robin-pierrot {
+  background-position: 0 -429px;
+  height: 80px;
+  width: 80px;
+}
+
+/* line 33, ../scss/_sprite.scss */
+.icone-tech {
+  background-position: 0 -514px;
   height: 22px;
   width: 15px;
 }
 
 /* line 33, ../scss/_sprite.scss */
 .icone-tram {
-  background-position: 0 -290px;
+  background-position: 0 -541px;
   height: 22px;
   width: 15px;
 }
@@ -124,28 +159,53 @@
   }
 
   /* line 41, ../scss/_sprite.scss */
-  .icone-loading-droite {
+  .icone-guillaume-migeon {
     background-position: 0 -162px;
   }
 
   /* line 41, ../scss/_sprite.scss */
+  .icone-guy {
+    background-position: 0 -247px;
+  }
+
+  /* line 41, ../scss/_sprite.scss */
+  .icone-lamp {
+    background-position: 0 -274px;
+  }
+
+  /* line 41, ../scss/_sprite.scss */
+  .icone-loading-droite {
+    background-position: 0 -301px;
+  }
+
+  /* line 41, ../scss/_sprite.scss */
   .icone-loading {
-    background-position: 0 -199px;
+    background-position: 0 -338px;
   }
 
   /* line 41, ../scss/_sprite.scss */
   .icone-plane {
-    background-position: 0 -236px;
+    background-position: 0 -375px;
   }
 
   /* line 41, ../scss/_sprite.scss */
   .icone-position {
-    background-position: 0 -263px;
+    background-position: 0 -402px;
+  }
+
+  /* line 41, ../scss/_sprite.scss */
+  .icone-robin-pierrot {
+    background-position: 0 -429px;
+  }
+
+  /* line 41, ../scss/_sprite.scss */
+  .icone-tech {
+    background-position: 0 -514px;
   }
 
   /* line 41, ../scss/_sprite.scss */
   .icone-tram {
-    background-position: 0 -290px;
+    background-position: 0 -541px;
   }
 }
 @font-face {
@@ -411,14 +471,27 @@ a {
 }
 
 /* line 73, ../scss/index.scss */
+.italic {
+  font-style: italic;
+}
+
+/* line 77, ../scss/index.scss */
 .bloc-container {
   width: 100%;
 }
-/* line 76, ../scss/index.scss */
+/* line 80, ../scss/index.scss */
 .bloc-container .bloc {
   padding: 16px 16px;
 }
-/* line 79, ../scss/index.scss */
+/* line 84, ../scss/index.scss */
+.bloc-container .bloc.bloc-about .ss-bloc {
+  margin-bottom: 30px;
+}
+/* line 87, ../scss/index.scss */
+.bloc-container .bloc.bloc-about .ss-bloc:last-of-type {
+  margin-bottom: 0;
+}
+/* line 93, ../scss/index.scss */
 .bloc-container .bloc .ss-bloc {
   margin: auto;
   max-width: 800px;
@@ -426,66 +499,90 @@ a {
   padding: 16px 16px;
   color: #ffffff;
 }
-/* line 86, ../scss/index.scss */
+/* line 100, ../scss/index.scss */
 .bloc-container .bloc .ss-bloc > span + span.txtmiddle, .bloc-container .bloc .ss-bloc .ss-bloc-like > span + span.txtmiddle {
   padding-left: 16px;
   line-height: 20px;
 }
-/* line 91, ../scss/index.scss */
+/* line 105, ../scss/index.scss */
+.bloc-container .bloc .ss-bloc .creators {
+  width: 100%;
+  display: table;
+}
+@media (max-width: 630px) {
+  /* line 109, ../scss/index.scss */
+  .bloc-container .bloc .ss-bloc .creators > .col {
+    display: block;
+  }
+  /* line 112, ../scss/index.scss */
+  .bloc-container .bloc .ss-bloc .creators > .col:first-of-type {
+    margin-bottom: 50px;
+  }
+}
+/* line 118, ../scss/index.scss */
+.bloc-container .bloc .ss-bloc .creators .creators-infos {
+  padding-left: 20px;
+  line-height: 24px;
+}
+/* line 124, ../scss/index.scss */
 .bloc-container .bloc .ss-bloc .ss-bloc-error {
   display: none;
 }
-/* line 97, ../scss/index.scss */
+/* line 130, ../scss/index.scss */
 .bloc-container .bloc.bloc-header img {
   max-width: 100%;
   max-height: 93px;
 }
-/* line 103, ../scss/index.scss */
+/* line 136, ../scss/index.scss */
 .bloc-container .bloc.bloc-position {
   background-color: black;
 }
-/* line 107, ../scss/index.scss */
+/* line 140, ../scss/index.scss */
 .bloc-container .bloc.bloc-tram {
   background-color: #ffb100;
 }
-/* line 111, ../scss/index.scss */
+/* line 144, ../scss/index.scss */
 .bloc-container .bloc.bloc-refresh {
   background-color: #44df39;
 }
-/* line 114, ../scss/index.scss */
+/* line 147, ../scss/index.scss */
 .bloc-container .bloc.bloc-refresh .ss-bloc {
   cursor: pointer;
 }
-/* line 117, ../scss/index.scss */
+/* line 150, ../scss/index.scss */
 .bloc-container .bloc.bloc-refresh .ss-bloc:hover {
   background-color: #ffffff;
   outline: 1px solid #ffffff;
   border-color: #44df39;
   color: #44df39;
 }
-/* line 126, ../scss/index.scss */
+/* line 159, ../scss/index.scss */
 .bloc-container .bloc.bloc-essey {
   background-color: #fe2015;
 }
-/* line 130, ../scss/index.scss */
+/* line 163, ../scss/index.scss */
 .bloc-container .bloc.bloc-chu {
   background-color: #1e38c7;
 }
-/* line 134, ../scss/index.scss */
+/* line 167, ../scss/index.scss */
 .bloc-container .bloc .passages {
   line-height: 20px;
 }
-/* line 137, ../scss/index.scss */
+/* line 170, ../scss/index.scss */
 .bloc-container .bloc .passages .loading {
   display: none;
 }
-/* line 142, ../scss/index.scss */
+/* line 175, ../scss/index.scss */
 .bloc-container .bloc.bloc-footer {
   color: #ffffff;
   padding: 90px 16px;
   font-size: 14px;
 }
-/* line 147, ../scss/index.scss */
+/* line 180, ../scss/index.scss */
+.bloc-container .bloc.bloc-footer > div {
+  margin-bottom: 30px;
+}
+/* line 184, ../scss/index.scss */
 .bloc-container .bloc.bloc-footer .icone-coeur {
   margin: 0 2px;
 }

@@ -96,72 +96,63 @@
         <div class="bloc bloc-header txtcenter">
             <a href="/"><img src="/image/logo.png" alt="Logo Chrono'Stan : les horaires de tram de Nancy" /></a>
         </div>
-        <div class="bloc bloc-position">
+        <div class="bloc bloc-position bloc-about">
             <div class="ss-bloc proxima-bold">
-                <span class="col txtmiddle"><span class="icone-position txtmiddle"></span></span>
-                <span class="txtmiddle uppercase col" id="addr"></span>
-            </div>
-        </div>
+                <span class="col txtmiddle"><span class="icone-lamp txtmiddle"></span></span>
+                <span class="txtmiddle uppercase col">Pourquoi ?</span>
 
-        <div class="bloc bloc-tram">
-            <div class="ss-bloc proxima-bold uppercase">
-                <span class="col txtmiddle"><span class="icone-tram txtmiddle"></span></span>
-                <span class="txtmiddle uppercase col">
-                    Le + proche : <strong id="arret"></strong><span id="dist"></span>
-                </span>
                 <div class="hr"></div>
-                <a class="ss-bloc-like" href="" id="maps" target="_blank" new-window="1">
-                    <span class="col txtmiddle"><span class="icone-plane txtmiddle"></span></span>
-                    <span class="txtmiddle uppercase col">
-                        M'y rendre
-                    </span>
-                </a>
+                <div class="ss-bloc-like proxima">
+                    Vous habitez Nancy et vous prenez le tram tous les jours ? 
+                    Vous en avez-marre de la lenteur du site de Stan ? Vous le trouvez trop compliqué ? 
+                    Vous avez raté votre tram d'une minute à peine ?<br/><br/>
+                    Ce sont aussi des problèmes que nous avons rencontrés et qui nous ont posé problème. 
+                    Alors comme on dit, <span class="italic">aux grands maux les grands remèdes</span> ! 
+                    C'est pourquoi nous avons décidé de développer notre application qui nous afficherait le plus rapidement possible
+                    les horaires du tram le plus proche. On utilise donc la géolocalisation pour gagner du temps.<br/><br/>
+                    Que vous soyez à Mont désert, Blandan, Gare ou Point central, l'application vous trouve et vous donne les horaires plus rapidement que 
+                    n'importe quelle autre application !
+                </div>
             </div>
-        </div>
-        <div class="bloc bloc-refresh">
-            <div class="ss-bloc proxima-bold uppercase transition" onmouseover="goBlanc()" onmouseleave="goVert()" onclick="refreshPage()">
-                <span class="col txtmiddle"><span class="icone-chrono txtmiddle"></span></span>
-                <span class="txtmiddle uppercase col">
-                    Refresh
-                </span>
-            </div>
-        </div>
-        <div class="bloc bloc-essey">
+
             <div class="ss-bloc proxima-bold">
-                <span class="col txtmiddle"><span class="icone-droite txtmiddle"></span></span>
-                <span class="txtmiddle uppercase col">DIR. ESSEY-MOUZIMPRE</span>
+                <span class="col txtmiddle"><span class="icone-tech txtmiddle"></span></span>
+                <span class="txtmiddle uppercase col">Comment ?</span>
+
                 <div class="hr"></div>
-                <div class="passages uppercase">
-                    <div class="loading txtcenter">
-                        <span class="icone-loading-droite rotating-droite"></span>
-                    </div>
-                    <div class="horaires" id="passagesE">
-                    </div>
-                </div>
-                <div class="uppercase proxima-bold ss-bloc-error" id="errorE">
-                    <div class="hr"></div>
+                <div class="ss-bloc-like proxima">
+                    Chuuuuut ! C'est secret ...
                 </div>
             </div>
-        </div>
-        <div class="bloc bloc-chu">
+
             <div class="ss-bloc proxima-bold">
-                <span class="col txtmiddle"><span class="icone-gauche txtmiddle"></span></span>
-                <span class="txtmiddle uppercase col">DIR. CHU-BRABOIS</span>
+                <span class="col txtmiddle"><span class="icone-guy txtmiddle"></span></span>
+                <span class="txtmiddle uppercase col">Qui ?</span>
+
                 <div class="hr"></div>
-                <div class="passages uppercase">
-                    <div class="loading txtcenter">
-                        <span class="icone-loading rotating"></span>
+                <div class="ss-bloc-like proxima creators">
+                    <div class="col">
+                        <div class="col txtmiddle">
+                            <span class="icone-guillaume-migeon"></span>
+                        </div>
+                        <div class="col txtmiddle creators-infos">
+                            <div class="proxima-bold uppercase">Guillaume Migeon</div>
+                            <div>21 ans, Étudiant MIAGE</div>
+                        </div>
                     </div>
-                    <div class="horaires" id="passagesV">
+                    <div class="col">
+                        <div class="col txtmiddle">
+                            <span class="icone-robin-pierrot"></span>
+                        </div>
+                        <div class="col txtmiddle creators-infos">
+                            <div class="proxima-bold uppercase">Robin pierrot</div>
+                            <div>21 ans, Chef de projet</div>
+                        </div>
                     </div>
-                <div class="uppercase proxima-bold ss-bloc-error" id="errorV">
-                    <div class="hr"></div>
-                </div>
                 </div>
             </div>
         </div>
         <div class="bloc bloc-footer txtcenter">
-            <div><a href="/about/">En savoir plus</a></div>
             <span class="txtmiddle">
                 Made with 
             </span>
@@ -184,6 +175,5 @@ if(window.location.host == "chronostan.fr" || window.location.host == "www.chron
 }
 
 </script>
-<script src="/js/index.js?v=<?= time() ?>"></script>
 </body>
 </html>

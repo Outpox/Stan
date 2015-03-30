@@ -137,7 +137,7 @@
                         </div>
                         <div class="col txtmiddle creators-infos">
                             <div class="proxima-bold uppercase">Guillaume Migeon</div>
-                            <div>21 ans, Chef de projet</div>
+                            <div>22 ans, Développeur Web</div>
                         </div>
                     </div>
                     <div class="col">

@@ -21,46 +21,46 @@
     <!-- Windows 8 et windows phone-->
     <meta name="application-name" content="Chrono'Stan"/>
     <meta name="msapplication-TileColor" content="#000000"/>
-    <meta name="msapplication-square70x70logo" content="image/windows-tiny.png"/>
-    <meta name="msapplication-square150x150logo" content="image/windows-square.png"/>
-    <meta name="msapplication-wide310x150logo" content="image/windows-wide.png"/>
-    <meta name="msapplication-square310x310logo" content="image/windows-large.png"/>
+    <meta name="msapplication-square70x70logo" content="/image/windows-tiny.png"/>
+    <meta name="msapplication-square150x150logo" content="/image/windows-square.png"/>
+    <meta name="msapplication-wide310x150logo" content="/image/windows-wide.png"/>
+    <meta name="msapplication-square310x310logo" content="/image/windows-large.png"/>
     <meta name="msapplication-tap-highlight" content="no"/> 
 
     <!-- Apple touch icons -->
-    <link rel="apple-touch-icon-precomposed" href="image/apple-touch-icon-152x152-precomposed.png" sizes="152x152">
-    <link rel="apple-touch-icon-precomposed" href="image/apple-touch-icon-120x120-precomposed.png" sizes="120x120">
-    <link rel="apple-touch-icon-precomposed" href="image/apple-touch-icon-76x76-precomposed.png" sizes="76x76">
-    <link rel="apple-touch-icon-precomposed" href="image/apple-touch-icon-precomposed.png">
-    <link rel="apple-touch-icon" href="image/apple-touch-icon-152x152-precomposed.png" sizes="152x152">
+    <link rel="apple-touch-icon-precomposed" href="/image/apple-touch-icon-152x152-precomposed.png" sizes="152x152">
+    <link rel="apple-touch-icon-precomposed" href="/image/apple-touch-icon-120x120-precomposed.png" sizes="120x120">
+    <link rel="apple-touch-icon-precomposed" href="/image/apple-touch-icon-76x76-precomposed.png" sizes="76x76">
+    <link rel="apple-touch-icon-precomposed" href="/image/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="/image/apple-touch-icon-152x152-precomposed.png" sizes="152x152">
 
     <!-- Apple load image -->
     <!-- iPad, retina, portrait -->
-    <link href="image/apple-touch-startup-image-1536x2008.png" 
+    <link href="/image/apple-touch-startup-image-1536x2008.png" 
           media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)"
           rel="apple-touch-startup-image">
     <!-- iPad, retina, landscape -->
-    <link href="image/apple-touch-startup-image-1496x2048.png"
+    <link href="/image/apple-touch-startup-image-1496x2048.png"
           media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)"
           rel="apple-touch-startup-image">
     <!-- iPad, portrait -->
-    <link href="image/apple-touch-startup-image-768x1004.png"
+    <link href="/image/apple-touch-startup-image-768x1004.png"
           media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)"
           rel="apple-touch-startup-image">
     <!-- iPad, landscape -->
-    <link href="image/apple-touch-startup-image-748x1024.png"
+    <link href="/image/apple-touch-startup-image-748x1024.png"
           media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)"
           rel="apple-touch-startup-image">
     <!-- iPhone 5 -->
-    <link href="image/apple-touch-startup-image-640x1096.png"
+    <link href="/image/apple-touch-startup-image-640x1096.png"
           media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"
           rel="apple-touch-startup-image">
     <!-- iPhone, retina -->
-    <link href="image/apple-touch-startup-image-640x920.png"
+    <link href="/image/apple-touch-startup-image-640x920.png"
           media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)"
           rel="apple-touch-startup-image">
     <!-- iPhone -->
-    <link href="image/apple-touch-startup-image-320x460.png"
+    <link href="/image/apple-touch-startup-image-320x460.png"
           media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)"
           rel="apple-touch-startup-image">
 
@@ -175,6 +175,6 @@ if(window.location.host == "chronostan.fr" || window.location.host == "www.chron
 }
 
 </script>
-<script type="text/javascript" src="/js/index.js?v=<?= time() ?>"></script>
+<script type="text/javascript" src="/js/index.js?v=<?= time() ?>/"></script>
 </body>
 </html>

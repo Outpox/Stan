@@ -121,7 +121,10 @@
 
                 <div class="hr"></div>
                 <div class="ss-bloc-like proxima">
-                    Chuuuuut ! C'est secret ...
+                    <div>Chuuuuut ! C'est secret ...</div>
+                    <div>M'enfin si vous voulez jeter un oeil à notre 
+                        <a href="https://github.com/Outpox/Stan" target="_blank">github</a> ...
+                    </div>
                 </div>
             </div>
 

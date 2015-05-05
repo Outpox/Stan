@@ -110,7 +110,7 @@
                     Alors comme on dit, <span class="italic">aux grands maux les grands remèdes</span> ! 
                     C'est pourquoi nous avons décidé de développer notre application qui nous afficherait le plus rapidement possible
                     les horaires du tram le plus proche. On utilise donc la géolocalisation pour gagner du temps.<br/><br/>
-                    Que vous soyez à Mont désert, Blandan, Gare ou Point central, l'application vous trouve et vous donne les horaires plus rapidement que 
+                    Que vous soyez à Mon Désert, Blandan, Gare ou Point Central, l'application vous trouve et vous donne les horaires plus rapidement que 
                     n'importe quelle autre application !
                 </div>
             </div>

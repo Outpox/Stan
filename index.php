@@ -167,7 +167,7 @@
             </span>
             <span class="icone-coeur txtmiddle"></span>
             <span class="txtmiddle"> 
-                by <a href="https://github.com/Outpox" target="_blank" new-window="1">@outpox</a> 
+                by <a href="http://guillaumemigeon.fr" target="_blank" new-window="1">@Outpox</a>
                 & <a href="http://cbrplx.io/" target="_blank" new-window="1">@cbrplx</a>
             </span>
         </div>

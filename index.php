@@ -68,15 +68,15 @@
     <meta property="og:title" content="ChronoStan">
     <meta property="og:type" content="website">
     <meta property="og:description" content="Accédez rapidement aux horaires des prochains passages de tram à Nancy grâce à Chrono'Stan et son service de géolocalisation.">
-    <meta property="og:image" content="http://chronostan.fr/image/share2.png">
-    <meta property="og:url" content="http://chronostan.fr/">
+    <meta property="og:image" content="https://chronostan.fr/image/share2.png">
+    <meta property="og:url" content="https://chronostan.fr/">
     <meta property="og:site_name" content="Chrono'Stan">
     <meta property="fb:admins" content="1614882856">
 
     <!-- Google+ -->
     <meta itemprop="name" content="ChronoStan">
     <meta itemprop="description" content="Accédez rapidement aux horaires des prochains passages de tram à Nancy grâce à Chrono'Stan et son service de géolocalisation.">
-    <meta itemprop="image" content="http://chronostan.fr/image/share2.png">
+    <meta itemprop="image" content="https://chronostan.fr/image/share2.png">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
@@ -84,7 +84,7 @@
     <meta name="twitter:title" content="ChronoStan">
     <meta name="twitter:description" content="Accédez rapidement aux horaires des prochains passages de tram à Nancy grâce à Chrono'Stan et son service de géolocalisation.">
     <meta name="twitter:creator" content="@CBRPLX">
-    <meta name="twitter:image:src" content="http://chronostan.fr/image/share2.png">
+    <meta name="twitter:image:src" content="https://chronostan.fr/image/share2.png">
 
     <script src="/js/addtohomescreen.js?v=4"></script>
     <script>
@@ -168,7 +168,7 @@
             <span class="icone-coeur txtmiddle"></span>
             <span class="txtmiddle"> 
                 by <a href="https://github.com/Outpox" target="_blank" new-window="1">@outpox</a> 
-                & <a href="http://cbrplx.io/" target="_blank" new-window="1">@cbrplx</a>
+                & <a href="https://cbrplx.io/" target="_blank" new-window="1">@cbrplx</a>
             </span>
         </div>
     </div>

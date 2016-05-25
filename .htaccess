@@ -1,4 +1,0 @@
-Options +FollowSymlinks
-RewriteEngine on
-
-RewriteRule ^about/$  about.php

@@ -132,6 +132,20 @@
                 <span class="col txtmiddle"><span class="icone-guy txtmiddle"></span></span>
                 <span class="txtmiddle uppercase col">Qui ?</span>
 
+                <?php
+
+                    /** Calcul de notre age en fonction de notre date d'anniversaire **/
+                    $gm = 728607600;
+                    $pr = 755910000;
+
+                    $time_difference_gm = time() - $gm;
+                    $time_difference_pr = time() - $pr;
+
+                    $seconds_per_year = 60*60*24*365;
+                    $years_gm = round($time_difference_gm / $seconds_per_year);
+                    $years_pr = round($time_difference_pr / $seconds_per_year);
+                ?>
+
                 <div class="hr"></div>
                 <div class="ss-bloc-like proxima creators">
                     <div class="col">
@@ -140,7 +154,7 @@
                         </div>
                         <div class="col txtmiddle creators-infos">
                             <div class="proxima-bold uppercase">Guillaume Migeon</div>
-                            <div>22 ans, Développeur Web</div>
+                            <div><?= $years_gm ?> ans, Développeur Web</div>
                         </div>
                     </div>
                     <div class="col">
@@ -149,7 +163,7 @@
                         </div>
                         <div class="col txtmiddle creators-infos">
                             <div class="proxima-bold uppercase">Robin pierrot</div>
-                            <div>21 ans, Chef de projet</div>
+                            <div><?= $years_pr ?> ans, Chef de projet</div>
                         </div>
                     </div>
                 </div>

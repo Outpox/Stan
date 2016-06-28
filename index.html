@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fr" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Chrono'Stan - Horaires de tram de Nancy</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
+    <style>
+        nav {
+            font-size: 28px;
+            text-align: center;
+        }
+
+        nav > .column {
+            height: 100%;
+        }
+
+        main {
+            padding: 0 5%;
+            font-size: 25px;
+            background-color: rgb(154, 205, 50);
+        }
+
+        span {
+            font-size: 2em;
+        }
+
+    </style>
+</head>
+<body id="app">
+<nav class="columns">
+    <div class="column notification is-half" v-bind:class="statusClass">
+        {{ $t('status') }} {{ $t('statusCode.' + status) }}
+    </div>
+    <div class="column notification is-half" v-bind:class="modeClass">
+        {{ $t('mode') }} {{ $t('modeCode.' + mode) }}
+    </div>
+</nav>
+
+<main>
+    <div class="columns">
+        <div class="column">
+            Location:
+        </div>
+    </div>
+    <div class="columns">
+        <div class="column">lat: {{ position.latitude }}</div>
+        <div class="column">long: {{ position.longitude }}</div>
+    </div>
+    <div class="columns">
+        <div class="column">
+            Detected address : {{ address }}
+        </div>
+    </div>
+    <div class="columns">
+        <div class="column">Direction Essey</div>
+        <div class="column">Direction Vandœuvre</div>
+    </div>
+    <div class="columns">
+        <div class="column">{{ stops.closestEssey.Title }} ({{ stops.closestEssey.Distance }}km)</div>
+        <div class="column">{{ stops.closestVandoeuvre.Title }} ({{ stops.closestVandoeuvre.Distance }}km)</div>
+    </div>
+    <div class="columns">
+        <div class="column">
+            <a href="{{generateMapsUrl(stops.closestEssey)}}">Get there</a>
+        </div>
+        <div class="column">
+            <a href="{{generateMapsUrl(stops.closestVandoeuvre)}}">Get there</a>
+        </div>
+    </div>
+</main>
+
+<script src="node_modules/vue/dist/vue.min.js"></script>
+<script src="node_modules/vue-i18n/dist/vue-i18n.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

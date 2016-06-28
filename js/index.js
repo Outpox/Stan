@@ -82,7 +82,8 @@ function geoFindMe() {
 
     function error(error) {
         alert("Unable to retrieve your location due to " + error.code + " : " + error.message);
-    };
+        document.querySelector("#addr").innerHTML = 'Impossible de récupérer votre adresse.';
+    }
 
     var geo_options = {
         enableHighAccuracy: true,

@@ -5,12 +5,27 @@ include "simple_html_dom.php";
 header('Content-type: text/html; charset=utf-8');
 
 $arret = $_GET["arret"];
-$direction = "81$1$13";
 $arret = str_replace(" ", "+", $arret);
-// 81$1$13   //Essey
-// 81$2$1013 //Vandoeuvre
 
-$url = "http://www.reseau-stan.com/monitoring/index.asp?rub_code=67&pointDep=283" . $arret . "$2$54395$&line=" . $direction;
+//Directions:
+// 1 = Essey
+// 2 = Vandœuvre
+
+$pointDep = 0; // LogicalId de l'arrêt
+$arretDep = ''; // Title de l'arrêt
+$direction = 0; // Voir directions
+$localityCode = '54395'; // Semble être constant pour les trams
+$line = 81; // = Tram
+$arretId = 0; // ID de l'arrêt
+
+//Exemple pour Exelmans :
+//$pointDep = 277
+//$arretDep = 'Exelmans'
+//$arretId = 1011
+//http://www.reseau-stan.com/monitoring/index.asp?rub_code=67&pointDep=277$Exelmans$2$54395&line=81$2$1011
+
+$url = "http://www.reseau-stan.com/monitoring/index.asp?rub_code=67&pointDep=" . $pointDep . "$" . $arretDep . "$" . $direction . "$" . $localityCode . "$&line=" . $line . "$" . $direction . "$" . $arretId;
+
 $html = file_get_html($url);
 $tabE = array();
 foreach ($html->find('div.hour ul li') as $h) {

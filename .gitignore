@@ -53,3 +53,4 @@ crashlytics-build.properties
 
 .htaccess
 
+node_modules/
